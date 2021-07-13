@@ -1,0 +1,57 @@
+.pet-card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include for-mobile-layout {
+        margin-block-end: 20px;
+    }
+
+    img {
+        height: 165px;
+        border-radius: 10px;
+        object-fit: cover;
+        cursor: pointer;
+    }
+
+    .card-info {
+        display: flex;
+        flex-direction: column;
+
+        .pet-title {
+            color: $clr4;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    }
+
+    .pet-name-gender {
+        justify-content: space-between;
+
+        .gender {
+            height: 22px;
+            width: 22px;
+        }
+    }
+
+    .pet-preview-host {
+        justify-content: space-between;
+
+        p {
+            color: $clr5;
+        }
+    }
+
+    .pet-preview-likes {
+        user-select: none;
+        :first-child {
+            cursor: pointer;
+            margin-inline-end: 2px;
+        }
+
+        :last-child {
+            font-size: 1.025rem;
+        }
+    }
+}

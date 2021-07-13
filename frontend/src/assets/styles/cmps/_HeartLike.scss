@@ -1,0 +1,33 @@
+   .heart {
+       cursor: pointer;
+       transition: 0.3s;
+       user-select: none;
+
+       &.heart-empty {
+           fill:$clr9 !important;
+           transition: 0.3s;
+           height: 25px;
+           width: 25px;
+
+           &:active {
+               fill: $clr7!important;
+               transition: 0.3s;
+           }
+
+           &:hover {
+               fill: $clr8 !important;
+           }
+       }
+
+       &.heartfill {
+           fill: $clr7 !important;
+           transition: 0.3s;
+           height: 25px;
+           width: 25px;
+
+           &:active {
+               fill: lightgray !important;
+               transition: 0.3s;
+           }
+       }
+   }

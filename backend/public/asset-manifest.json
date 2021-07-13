@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0e44bc81.chunk.css",
+    "main.js": "/static/js/main.a89ee76a.chunk.js",
+    "main.js.map": "/static/js/main.a89ee76a.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.3910a065.js",
+    "runtime-main.js.map": "/static/js/runtime-main.3910a065.js.map",
+    "static/css/2.c7a358ca.chunk.css": "/static/css/2.c7a358ca.chunk.css",
+    "static/js/2.e8273ef4.chunk.js": "/static/js/2.e8273ef4.chunk.js",
+    "static/js/2.e8273ef4.chunk.js.map": "/static/js/2.e8273ef4.chunk.js.map",
+    "static/js/3.e7491cd3.chunk.js": "/static/js/3.e7491cd3.chunk.js",
+    "static/js/3.e7491cd3.chunk.js.map": "/static/js/3.e7491cd3.chunk.js.map",
+    "index.html": "/index.html",
+    "service-worker.js": "/service-worker.js",
+    "service-worker.js.map": "/service-worker.js.map",
+    "static/css/2.c7a358ca.chunk.css.map": "/static/css/2.c7a358ca.chunk.css.map",
+    "static/css/main.0e44bc81.chunk.css.map": "/static/css/main.0e44bc81.chunk.css.map",
+    "static/js/2.e8273ef4.chunk.js.LICENSE.txt": "/static/js/2.e8273ef4.chunk.js.LICENSE.txt",
+    "static/media/main.scss": "/static/media/FjallaOne-Regular.c674a102.ttf",
+    "static/media/binoculars.10ac0a1e.svg": "/static/media/binoculars.10ac0a1e.svg",
+    "static/media/font-awesome.min.css": "/static/media/fontawesome-webfont.f691f37e.woff",
+    "static/media/loader_2.809f8bbc.svg": "/static/media/loader_2.809f8bbc.svg",
+    "static/media/loader_3.162bac3d.svg": "/static/media/loader_3.162bac3d.svg",
+    "static/media/logo1.fad79a8d.svg": "/static/media/logo1.fad79a8d.svg",
+    "static/media/magnifying-glass.4ee2370c.svg": "/static/media/magnifying-glass.4ee2370c.svg",
+    "static/media/mars.aeaf4e2a.svg": "/static/media/mars.aeaf4e2a.svg",
+    "static/media/menu.28107808.svg": "/static/media/menu.28107808.svg",
+    "static/media/paw.5574eb69.svg": "/static/media/paw.5574eb69.svg",
+    "static/media/pin.3b7dea01.svg": "/static/media/pin.3b7dea01.svg",
+    "static/media/slick-theme.css": "/static/media/slick.c94f7671.ttf",
+    "static/media/user.81d7b418.svg": "/static/media/user.81d7b418.svg",
+    "static/media/venus.e880e541.svg": "/static/media/venus.e880e541.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3910a065.js",
+    "static/css/2.c7a358ca.chunk.css",
+    "static/js/2.e8273ef4.chunk.js",
+    "static/css/main.0e44bc81.chunk.css",
+    "static/js/main.a89ee76a.chunk.js"
+  ]
+}

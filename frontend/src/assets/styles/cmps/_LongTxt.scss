@@ -1,0 +1,10 @@
+.read-more {
+    color: $clr4;
+    .expand-txt{
+        color:$clr1 ;
+        cursor: pointer;
+        &:hover{
+            font-weight: bold;
+        }
+    }
+}

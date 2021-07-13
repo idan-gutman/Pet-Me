@@ -1,0 +1,36 @@
+.main-footer {
+    background-color: $clr10;
+
+    & small {
+        align-self: center;
+        padding: 10px 0 3px;
+    }
+
+    .nav-social {
+        cursor: pointer;
+        user-select: none;
+
+        :not(:last-child) {
+            padding-right: 8px;
+        }
+
+        .in {
+            padding-top: 0.6px;
+        }
+
+        :hover {
+            .fa {
+                fill: $clr11;
+            }
+
+            .in {
+                fill: $clr12;
+            }
+
+            .tw {
+                fill: $clr13;
+            }
+        }
+
+    }
+}

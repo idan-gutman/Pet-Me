@@ -1,0 +1,163 @@
+.comments-container {
+    border-bottom: 1px solid $clr9;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    .comments-head{
+        margin-bottom: 15px;
+    }
+    .comments-btns {
+        justify-content: flex-end;
+
+        & .add-comment-btn{
+            user-select: none;
+            border: 1px solid $clr1;
+            outline: 0;
+            margin: 0;
+            transition: .1s;
+            font-weight: 500;
+            font-size: 14px;
+            border-radius: 8px;
+            transition: .3s;
+            background-color:$clr6;
+            color: #6b6a6a;
+
+            &:hover {
+                color: $clr6;
+                background-color: $clr1;
+            }
+        }
+    }
+    .comments-list {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+        
+    
+        @include for-normal-layout {
+            grid-template-columns: 1fr 1fr;
+            column-gap: 90px;
+        }   
+    }
+    .comment-preview-card {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+        border-radius: 8px;
+        border: 1px solid #d3d3d3b0;
+            & .comment-header{
+                align-items: center;
+                
+                & img {
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    margin-inline-end: 12px;
+                }
+                .commenter-name {
+                    font-weight: 700;
+                }
+                .comment-time {
+                    font-size: .875rem;
+                    color: $clr5;
+                }
+        }
+        }
+    }
+    
+//modal
+.new-comment-modal {
+    z-index: 1000;
+    background-color: rgba(0,0,0,.5);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: .3s;
+
+
+    &:hover {
+        cursor: pointer;
+    }
+  
+    & .modal-form {
+        background-color: $clr6;
+        padding: 25px;
+        border-radius: 15px;
+        width: 90vw;
+        transition: .3s;
+        box-shadow: 0 0 5px 2px #00000033;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        z-index: 3;
+    
+        & textarea {
+            resize: none; 
+            min-height: 172px; 
+            height: 172px;
+            display: block;
+            resize: vertical;
+            padding: 5px 15px;
+            line-height: 1.5;
+            box-sizing: border-box;
+            width: 100%;
+            font-size: inherit;
+            color: $clr4;
+            background-color: $clr6;
+            background-image: none;
+            border: 1px solid $clr9;
+            border-radius: 4px;
+            transition: border-color .2s cubic-bezier(.645,.045,.355,1);
+        } 
+
+        & .modal-btns {
+            justify-content: flex-end;
+            width: auto;
+
+            & button {
+                display: inline-block;
+                line-height: 1;
+                white-space: nowrap;
+                cursor: pointer;
+                border: 1px solid $clr2;
+                -webkit-appearance: none;
+                text-align: center;
+                box-sizing: border-box;
+                outline: 0;
+                margin: 0;
+                transition: .1s;
+                font-weight: 500;
+                padding: 12px 20px;
+                font-size: 14px;
+                border-radius: 8px;
+                transition: .3s;
+                margin-inline-start: 10px;
+                background: $clr6;
+                color: $clr4;
+            }
+            & .post-comment {
+                background-color: $clr1;
+                color: $clr6;
+
+                &:hover {
+                    color: $clr4;
+                    border-color: $clr1;
+                    background: $clr6;
+                    border-radius: 8px;
+                }
+            }
+            & .close-modal {
+                color: $clr4;
+
+                &:hover {
+                    border-color: $clr1;
+                    border-radius: 8px;
+                }
+            }
+        }
+    }
+}

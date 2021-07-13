@@ -1,0 +1,355 @@
+* button {
+    border-radius: 8px;
+}
+
+.main-profile {
+    // margin-top: 85px;
+
+}
+
+.user-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: 50px;
+    border: 1px solid #d3d3d3;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 100px;
+    margin-bottom: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+
+    @include for-normal-layout {
+        width: 50%;
+        margin: 0 auto;
+        margin-block-start: 80px;
+        margin-block-end: 30px;
+        padding: 10px;
+    }
+
+    .logout {
+        border-radius: 8px;
+        background-color: #afafaf;
+
+        &:hover {
+            background-color: $clr1;
+            transition: all 0.3s;
+        }
+    }
+}
+
+.user-rate {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-inline-start: 6px;
+    margin-block-end: 6px;
+}
+
+.profile-img {
+    img {
+        margin: 10px 0 0 0;
+        width: 170px;
+        height: 170px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin: 10px;
+    }
+}
+
+.user-info {
+    flex: 1;
+    left: 50px;
+    display: flex;
+    flex-direction: column;
+    text-transform: capitalize;
+
+    h1 {
+        font-size: rem(33px);
+        font-family: avenir-black;
+        margin-bottom: -5px;
+
+        @include for-normal-layout {
+            margin-top: 10px;
+        }
+    }
+
+    h4 {
+        &:first-of-type {
+            margin-top: 5px;
+        }
+
+        font-size: rem(20px);
+        margin-bottom: 5px;
+        color: #afafaf;
+
+        &.italic {
+            font-size: rem(20px);
+            font-style: italic;
+            color: #858585;
+        }
+
+    }
+
+}
+
+.MuiSvgIcon-root {
+    margin-top: -1px;
+    margin-left: -3px;
+}
+
+.location-info {
+    display: flex;
+    align-items: center;
+    // font-size: rem(25px);
+    // margin-left: -2px;
+    margin-bottom: 4px;
+    justify-content: center;
+    margin-inline-end: 16px;
+
+    img {
+        margin: 0 1px 5px 0;
+        width: 18px;
+        height: 25px;
+    }
+}
+
+.profile-pets-container {
+    gap: 10px;
+
+    & .user-requests {
+        border-inline-start: 1px solid #d3d3d3;
+        ;
+        padding-inline-start: 5px;
+    }
+
+    & h1 {
+        margin-bottom: 15px;
+    }
+}
+
+.profile-pets-container>* {
+    //    width: 50%; 
+}
+
+.user-pets {
+    // position: absolute;
+    // background-color: rgb(209, 230, 230);
+    width: 100%;
+    right: 50px;
+    @include for-normal-layout{
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    h1 {
+        text-align: center;
+    }
+}
+
+.adopt-card {
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(154, 160, 185, .05), 0 15px 40px rgba(166, 173, 201, .2);
+    margin-bottom: 20px;
+
+    img {
+        height: 100%;
+        width: 150px;
+        object-fit: cover;
+        border-radius: 0 10px 0 0;
+    }
+
+    .adopt-card-info {
+        width: 100%;
+    }
+}
+
+.adopt-table {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.adopt-table {
+    img {
+        margin-right: 20px;
+    }
+
+    td {
+        padding: 10px;
+    }
+
+    table {
+        width: 100%;
+    }
+}
+
+.pet-table-card {
+    border-collapse: collapse;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 100%;
+    box-shadow: 7px -32px 46px -68px rgba(141, 133, 133, 0.75);
+
+    .adopt-que-card {
+        border-top: 1px solid #d3d3d3;
+        align-items: center;
+        & tr {
+            flex: 1;
+            & .req-name {
+                padding: 10px 10px 0 10px;
+            }
+            .req-msg,.req-time {
+                padding-top: 0;
+                color: #727272;
+                font-size: 0.74rem;
+            }
+        }
+        & button {
+            height: 48px;
+            &:hover {
+                background-color: $clr6;
+                color: $clr4;
+                // border-radius: 8px;
+                border: 0.5px solid $clr1;
+            }
+            &::after {
+                background-color: $clr6;
+                color: $clr4;
+                // border-radius: 8px;
+                border: 0.5px solid $clr1;
+            }
+        }
+    }
+}
+
+.table-head {
+    tr {
+        background-color: $clr1;
+
+        td {
+            padding-left: 10px;
+
+            &:first-child {
+                padding: 10px;
+            }
+
+            &:last-child {}
+        }
+    }
+}
+
+.pet-img-box {
+    width: 119px;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+
+    & img {
+        max-width: 100%;
+        transition: all 0.3s;
+        display: block;
+        width: 100%;
+        height: auto;
+        transform: scale(1);
+    }
+}
+
+.pet-header {
+    align-items: center;
+    border-radius: 10px 10px 0 0;
+    padding-left: 10px;
+
+    & .pet-header-txt {
+        flex: 1;
+
+        & span {
+            flex: 1;
+        }
+        &>* {
+            margin-bottom: 5px;
+        }
+    }
+}
+
+.image-box {
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    width: 540px;
+}
+
+.image-box img {
+    max-width: 100%;
+    transition: all 0.3s;
+    display: block;
+    width: 100%;
+    height: auto;
+    transform: scale(1);
+}
+
+.image-box:hover img {
+    transform: scale(1.1);
+}
+
+.table-body {
+    tr {
+        border-top: 1px solid $clr6;
+    }
+
+    tr:last-of-type {
+        & td:first-child {
+            padding: 10px;
+            border-radius: 0 0 0 10px;
+        }
+
+        & td:last-child {
+            border-radius: 0 0 10px 0;
+        }
+    }
+
+    :las td {
+        padding-left: 10px;
+    }
+}
+
+.request-list {
+    min-width: 320px;
+    gap: 10px;
+
+    & .request-card {
+        max-width: fit-content;
+        padding: 10px;
+        border-radius: .3125rem;
+        border: 1px solid #cac3c3;
+        font-size: 13px;
+
+        .main-card-section {
+            position: relative;
+            height: 100px;
+            display: flex;
+            gap: 10px;
+
+            & .pet-img {
+                flex-basis: 20%;
+                border-radius: .3125rem;
+                height: 100%;
+                object-fit: cover;
+
+            }
+
+            & .request-info {
+                // flex: 1;
+                flex-basis: 70%;
+                display: flex;
+                flex-direction: column;
+                grid-gap: 8px;
+                gap: 8px;
+                cursor: default;
+
+                & div {
+                    gap: 5px;
+                }
+            }
+        }
+    }
+}

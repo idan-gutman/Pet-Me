@@ -1,0 +1,75 @@
+.loader{
+    height: 75vh;
+}
+
+.card-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 30px 15px;
+    padding-top: 30px;
+    margin-block-end: 20px;
+
+}
+
+.filter-description {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sort-form {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+
+    .select-sort {
+        user-select: none;
+        margin-inline-start: 10px;
+    }
+
+    &>select {
+        margin-left: 7px;
+        appearance: none;
+        border: none;
+        outline: none;
+        border: none;
+        font-family: avenir-black;
+        font-size: 1.1rem;
+        cursor: pointer;
+    }
+}
+
+.explore-container {
+    margin-top: 80px;
+}
+
+.explore-search {
+    user-select: none;
+    cursor: pointer;
+    top: 9px;
+    left: 24%;
+    align-items: center;
+    display: flex;
+    padding: 0 0 0 0.6rem;
+    color: $clr3;
+    font-size: 0.9rem;
+    position: fixed;
+    z-index: 101;
+    border-radius: 200px;
+    line-height: 43px;
+    border: #dadada 1px solid;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    .search-btn-explore {
+        user-select: none;
+        background-color: $clr1;
+        padding: 4px 8px;
+        margin: 1px 6px 1px 19px;
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        fill: $clr6;
+    }
+}

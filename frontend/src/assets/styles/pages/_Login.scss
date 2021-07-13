@@ -1,0 +1,14 @@
+.frm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &.login{
+        margin-top:rem(100px);
+        select{
+            border-radius: 5px;
+            
+        }
+    }
+    
+}
